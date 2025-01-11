@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { TodoProvider, useTodoContext } from "@/contexts";
+import { useTodoContext } from "@/contexts";
 import { Filters, TodoItem } from "@/components";
 import Link from "next/link";
 
@@ -76,9 +76,9 @@ const TodoList: React.FC = () => {
 
 const Home: React.FC = () => {
   return (
-    <TodoProvider>
+    <>
       <TodoList />
-    </TodoProvider>
+    </>
   );
 };
 
